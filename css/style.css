@@ -1185,40 +1185,36 @@ button.swiper-pagination-bullet {
 
 .gallery-main {
   position: relative;
-  padding: 0 10px;
+  padding: 0 13px;
 }
 
 .gallery-main .gallery-button-next {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 13px;
 }
 
 .gallery-main .gallery-button-next::after {
   content: "";
   z-index: 2000;
   position: absolute;
-  /* Абсолютное позиционирование */
-  border: 10px solid transparent;
-  /* Прозрачные границы */
-  border-left: 10px solid #3F3F3F;
+  border: 13px solid transparent;
+  border-left: 13px solid #3F3F3F;
   cursor: pointer;
 }
 
 .gallery-main .gallery-button-prev {
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -13px;
 }
 
 .gallery-main .gallery-button-prev::after {
   content: "";
   z-index: 2000;
   position: absolute;
-  /* Абсолютное позиционирование */
-  border: 10px solid transparent;
-  /* Прозрачные границы */
-  border-right: 10px solid #3F3F3F;
+  border: 13px solid transparent;
+  border-right: 13px solid #3F3F3F;
   cursor: pointer;
 }
 
@@ -1270,6 +1266,29 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 360px) {
+  .gallery-main {
+    padding: 0 15px;
+  }
+
+  .gallery-main .gallery-button-next {
+    right: 15px;
+  }
+
+  .gallery-main .gallery-button-next::after {
+    border: 15px solid transparent;
+    border-left: 15px solid #3F3F3F;
+  }
+
+  .gallery-main .gallery-button-prev {
+    left: -15px;
+  }
+
+  .gallery-main .gallery-button-prev::after {
+    border: 15px solid transparent;
+    /* Прозрачные границы */
+    border-right: 15px solid #3F3F3F;
+  }
+
   .gallery-slides img {
     width: 270px;
     height: 160px;
