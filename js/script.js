@@ -27,8 +27,7 @@ const swiper = new Swiper('.gallery-main', {
         nextEl: '.gallery-button-next',
         prevEl: '.gallery-button-prev',
     },
-    watchOverflow: true,
-    loop: true,  
+    loop: false,  
     spaceBetween: 15,
     breakpoints: {
         0: {
@@ -45,7 +44,7 @@ const swiper = new Swiper('.gallery-main', {
             spaceBetween: 10,
         },
     },
-  });
+    });
 lightbox.option({
     'showImageNumberLabel': false,
     'wrapAround': true,
